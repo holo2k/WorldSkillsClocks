@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".ResultActivity"
+    tools:deviceIds="wear">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/inner_frame_layout_padding">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/aquamarine"
+            android:text="Go to \n WorldSkills 2021"
+            android:textAlignment="center"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableStart="@drawable/sneaker"
+            android:drawablePadding="5dp"
+            android:paddingLeft="20dp"
+            android:text="10.000 steps"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Description"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/aquamarine"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed justo orci, finibus a diam porta, tristique pellentesque sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas neque erat, sodales at felis vel, interdum molestie magna. Aliquam erat volutpat. Sed quis nulla ligula. Morbi tincidunt volutpat diam. Nulla neque mi, egestas at nibh at, pellentesque tempus velit. Donec elit urna, tempus sed mi vitae, ultricies malesuada lectus. Nullam tempus, neque eget auctor eleifend, dui sapien ullamcorper massa, ac placerat ligula dolor in magna. Proin faucibus nisl id risus pellentesque porta. Donec fermentum venenatis purus, sit amet scelerisque urna viverra sit amet. Proin et convallis orci.
+
+Maecenas in ullamcorper ipsum. Nunc ut sapien sed sapien interdum aliquam id vitae nisl. In in suscipit mi, eu cursus magna. Integer pharetra erat arcu, sed malesuada lacus egestas sed. Nulla arcu erat, consectetur in rutrum eget, egestas sit amet lacus. Pellentesque sed lacus sed ligula condimentum pretium rutrum eu erat. Cras ac varius dolor. Nunc lacinia placerat libero, sed efficitur nisl tincidunt sit amet. Nulla quis blandit augue. Suspendisse condimentum bibendum tincidunt. Nullam quis mauris ut neque efficitur aliquam et id nulla.
+
+Suspendisse aliquam turpis id viverra scelerisque. Maecenas sagittis lectus eget metus cursus, quis rutrum eros ullamcorper. Aliquam efficitur at diam vitae interdum. Vivamus maximus non justo quis congue. Morbi velit lectus, maximus at orci a, hendrerit euismod risus. Phasellus tristique justo in bibendum suscipit. Nullam vehicula tristique mauris in sollicitudin. Fusce sit amet sapien ut nisi tincidunt mollis eu a magna. Donec tincidunt, lacus sed euismod condimentum, ex erat egestas lorem, congue molestie diam mauris sit amet nunc. In consequat vel ipsum at molestie. Nam interdum nisl eget fringilla faucibus. Vestibulum egestas justo at massa ultrices, non rhoncus nibh cursus.
+
+Nullam vitae augue neque. Etiam pellentesque consectetur consectetur. Nam laoreet est libero, vitae molestie dui finibus lacinia. Curabitur fringilla velit eu est iaculis, ac malesuada enim laoreet. Sed gravida turpis sit amet lectus mollis lacinia. Maecenas feugiat diam nec augue faucibus, eu pretium risus tempor. Pellentesque erat nisi, maximus in interdum quis, tristique scelerisque sapien. Vivamus feugiat venenatis ex, a efficitur ligula pharetra at. Integer vitae nisi sodales velit viverra bibendum.
+
+Curabitur tincidunt sapien at mauris pretium, ac facilisis ligula fringilla. Etiam sed turpis a augue iaculis hendrerit. Vivamus fringilla mi urna, ut interdum diam accumsan nec. Etiam rutrum vestibulum posuere. In vel posuere neque. Proin felis augue, egestas ut consequat in, commodo vitae leo. Aliquam consequat pellentesque eros, at facilisis ex porttitor sed. Duis et efficitur elit, sit amet imperdiet tortor. Proin eu quam cursus, suscipit velit quis, accumsan nunc. Fusce vitae mauris pharetra orci ullamcorper mollis. In varius accumsan odio, nec sodales eros venenatis ultrices. Vestibulum eu ex tempus, cursus urna sit amet, scelerisque ante. Integer fringilla odio et tellus consectetur tincidunt vel ut tortor. Aenean tristique id justo eu pretium."
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="take_result"
+            android:background="@drawable/bt_shape"
+            android:text="Send result">
+
+        </Button>
+
+
+    </LinearLayout>
+</ScrollView>
+
+</androidx.wear.widget.BoxInsetLayout>

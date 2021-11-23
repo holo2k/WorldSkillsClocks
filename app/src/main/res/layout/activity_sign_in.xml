@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".SignInActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_marginTop="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="150dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_shape"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:textColor="@color/aquamarine"
+            android:textColorHint="@color/aquamarine"
+            android:textSize="20dp" />
+        <EditText
+            android:id="@+id/password"
+            android:textSize="18dp"
+            android:layout_width="150dp"
+            android:layout_height="37dp"
+            android:hint="Password"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_shape"
+            android:textColor="@color/aquamarine"
+            android:textColorHint="@color/aquamarine"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bt_shape"
+            android:onClick="signin"
+            android:text="Sign in"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
